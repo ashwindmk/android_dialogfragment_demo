@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/embed_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/embed_dialogfragment_button"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/embed_dialogfragment_button"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/dialogfragment_button"
+        android:text="EMBED DIALOG FRAGMENT"/>
+
+    <Button
+        android:id="@+id/dialogfragment_button"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:text="SIMPLE DIALOG FRAGMENT" />
+
+
+    <Button
+        android:id="@+id/fullscreen_dialogfragment_button"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialogfragment_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="DIALOG FRAGMENT FULL SCREEN" />
+
+
+    <Button
+        android:id="@+id/alert_dialogfragment_button"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullscreen_dialogfragment_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Alert Dialog Fragment" />
+
+    <TextView
+        android:id="@+id/email_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_dialogfragment_button"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
